@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {
+  EmulatedEncapsulation
+} from "./01-encapsulation/emulated-encapsulation.ts/emulated-encapsulation";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [EmulatedEncapsulation],
+
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
