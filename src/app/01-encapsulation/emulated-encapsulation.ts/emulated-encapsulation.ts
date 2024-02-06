@@ -1,5 +1,7 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 
+
+
 @Component({
   selector: 'app-emulated-encapsulation',
   standalone: true,
@@ -7,7 +9,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated,
   styles: [`
     h1 {
-      color: #b02020;
+      color: #243456;
     }
   `,
     `
@@ -18,16 +20,15 @@ import {Component, ViewEncapsulation} from '@angular/core';
         flex-direction: column;
         align-items: center;
       }`,`
-      span.highlight {
-        background-color: #b02020;
-        color: white;
+      .subtitle {
+        color: lightslategray;
         padding: 0.5rem;
       }
     `],
   template: `
-    <div>
+    <div class="container">
       <h1>Emulated Encapsulation</h1>
-      <span class="highlight">This is a span with a class of highlight</span>
+      <span class="subtitle">This is a subtitle </span>
     </div>
   `
 })
