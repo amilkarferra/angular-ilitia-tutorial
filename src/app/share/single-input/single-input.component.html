@@ -1,0 +1,7 @@
+<mat-form-field class="example-full-width">
+  <mat-label>{{ label }}</mat-label>
+  <input [formControlName]="controlKey" matInput [placeholder]="placeholder" [type]="type">
+  <mat-error>
+    {{errorMessage}}
+  </mat-error>
+</mat-form-field>

@@ -1,13 +1,15 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {Component} from '@angular/core';
+import {ContactFormImprovableComponent} from "./contact-form-improvable/contact-form-improvable.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [
+    ContactFormImprovableComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'IlitiaTuto01';
+  title = 'IlitiaTuto01 - Angular Material';
 }
