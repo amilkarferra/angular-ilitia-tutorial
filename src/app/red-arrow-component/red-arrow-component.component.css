@@ -1,0 +1,21 @@
+/* Estilos para la punta de la flecha */
+.arrow {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid red; /* Tamaño y color de la punta */
+}
+
+/* Estilos para el tallo de la flecha */
+.arrow::before {
+  content: "";
+  position: absolute;
+  top: 15px; /* Ajusta este valor para cambiar la longitud del tallo */
+  left: 0; /* Alinea el tallo con el centro de la punta */
+  width: 2px; /* Ancho del tallo */
+  height: 50vh; /* Altura del tallo, ajusta según sea necesario */
+  background-color: red; /* Color del tallo */
+}

@@ -1,0 +1,108 @@
+:host {
+
+  .flex-container {
+    display: flex;
+
+    /*flex-direction: row;*/ /*DEFAULT*/
+    /*flex-direction: row-reverse;*/
+    /*flex-direction: column;*/
+    /*flex-direction: column-reverse; !*/
+
+    /*===wrap items===*/
+    /*flex-wrap: nowrap;*/ /*DEFAULT*/
+    /*flex-wrap: wrap;*/
+
+    /*===align lines in main axis===*/
+    /*justify-content: flex-start;*/ /*DEFAULT*/
+    /*justify-content: center;*/
+    /*justify-content: flex-end;*/
+    /*justify-content: space-between;*/
+    /*justify-content: space-around;*/
+    /*justify-content: space-evenly;*/
+
+    /*===align items in cross axis===*/
+    /* REMOVE HEIGHT OF THE BOX ITEMS INSIDE style.css line 13 TO SEE THE EFFECT */
+    /*align-items: stretch;*/ /*DEFAULT*/
+    /*align-items: flex-start;*/
+    /*align-items: flex-end;*/
+    align-items: center;
+    /*align-items: baseline;*/
+
+
+    /*===align all content in cross axis===*/
+    /*align-content: normal; !*DEFAULT*!*/
+    /*align-content: flex-start;*/
+    /*align-content: flex-end;*/
+    /*align-content: center;*/
+    /*align-content: space-between;*/
+    /*align-content: space-around;*/
+    /*align-content: stretch; */
+    /*align-content: space-evenly;*/
+    /*align-content: baseline;*/
+
+    height: 90vh;
+
+    .flex-item {
+      width: 120px;
+      height: 120px;
+      /*flex-grow: 0*/ /*DEFAULT*/
+      /*flex-grow: 1;*/
+
+      /*flex-shrink: 1;*/ /*DEFAULT*/
+
+
+
+      /*===order of the items===*/
+      &.item-3 {
+        /*order: -1;*/
+
+        /*max-width: 130px;*/
+        /*flex-grow: 1;*/
+        /*flex-grow: 2;*/
+
+        /*flex-shrink: 0;*/
+        /*max-width: 150px;*/
+        /*flex-basis: 180px;*/
+        /*align-self: flex-start;*/
+      }
+
+      &.item-4 {
+        /*flex-grow: 2;*/
+        /*flex-shrink: 2;*/
+      }
+
+      /*===grow===*/
+      /*flex-grow: 0; !*DEFAULT*!*/
+    }
+  }
+
+  .flex-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    gap: 20px;
+
+    & > div {
+      display: flex;
+      gap: 10px;
+    }
+
+    .flex-title--direction-info {
+      margin-left: auto;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    button {
+      margin: 10px;
+      width: auto;
+      height: 24px;
+      padding: 2px;
+      min-width: 125px;
+    }
+  }
+}

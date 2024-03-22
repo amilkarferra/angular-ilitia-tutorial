@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+.flex-container {
+  background-color: #efefef;
+  border: 1px solid #0000001f;
+  position: relative;
+}
+
+.flex-item {
+  background-color: rgb(110 94 121);
+  color: whitesmoke;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgba(250, 250, 250, 0.87);
+
+}
+
+body {
+  color: #1c1c1c;
+  font-family: Arial, sans-serif;
+}

@@ -1,0 +1,36 @@
+<!--<div class="flex-title">-->
+<!--  <div>-->
+<!--    <input type="checkbox" [(ngModel)]="useFlexDirectionFromStyleUrl">-->
+<!--    <h2>use flex-direction from style url</h2>-->
+<!--  </div>-->
+<!--  <div>-->
+<!--    <input type="checkbox" [(ngModel)]="showMainAxis">-->
+<!--    <h2>Show main axis</h2>-->
+<!--  </div>-->
+<!--  @if (!useFlexDirectionFromStyleUrl) {-->
+<!--    <div class="flex-title&#45;&#45;direction-info"><h1>{{ propertyName }}: {{ flexContainerDirection() }}</h1>-->
+<!--      <button (click)="toggleFlexDirection()">toggle flex-direction</button>-->
+<!--    </div>-->
+<!--  }-->
+<!--</div>-->
+<!--<div-->
+<!--  [style]="useFlexDirectionFromStyleUrl? undefined : {flexDirection : flexContainerDirection()}"-->
+<!--  class="flex-container">-->
+<!--  @for (item of array; track item) {-->
+<!--    <div [style]="{width:getDivCustomWidth(item)}" class="flex-item">{{ item + 1 }}</div>-->
+<!--  }-->
+
+<!--  @if(showMainAxis) {-->
+<!--    <app-red-arrow [style]="{position: 'absolute'}"/>-->
+<!--  }-->
+<!--</div>-->
+
+
+<!--FLEX ITEMS-->
+
+<div class="flex-container">
+  <div class="flex-item item-1">1</div>
+  <div class="flex-item item-2">2</div>
+  <div class="flex-item item-3">3</div>
+  <div class="flex-item item-4">4</div>
+</div>
