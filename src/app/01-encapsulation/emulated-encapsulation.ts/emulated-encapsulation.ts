@@ -4,7 +4,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
   selector: 'app-emulated-encapsulation',
   standalone: true,
   imports: [],
-  encapsulation: ViewEncapsulation.Emulated,
+  encapsulation: ViewEncapsulation.ShadowDom,
   styles: [`
     h1 {
       color: #b02020;
@@ -26,7 +26,8 @@ import {Component, ViewEncapsulation} from '@angular/core';
     `],
   template: `
     <div>
-      <h1>Emulated Encapsulation</h1>
+      <h1>SHADOW DOM</h1>
+<!--      <h1>Emulated Encapsulation</h1>-->
       <span class="highlight">This is a span with a class of highlight</span>
     </div>
   `
