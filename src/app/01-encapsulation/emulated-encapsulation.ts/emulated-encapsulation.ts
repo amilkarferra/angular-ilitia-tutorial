@@ -9,7 +9,7 @@ import {Component, ViewEncapsulation} from '@angular/core';
   encapsulation: ViewEncapsulation.Emulated,
   styles: [`
     h1 {
-      color: #243456;
+      color: rgba(255, 0, 0, 0.85);
     }
   `,
     `
